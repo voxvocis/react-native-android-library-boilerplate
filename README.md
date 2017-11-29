@@ -9,7 +9,7 @@ This project serves as a boilerplate to create custom React Native native module
         1. Modify it in `android/src/main/AndroidManifest.xml`.
         2. Rename the folders starting from `android/src/main/java` to match your package name.
         3. Adjust `package io.cmichel.boilerplate;` in the top of the `Module.java` and `Package.java` files in `android/src/main//java/package/path` to match it.
-    * Edit the name of your module in 
+    * Edit the name of your module in
 
         ```java
         @Override
@@ -28,7 +28,7 @@ This project serves as a boilerplate to create custom React Native native module
 There are many ways to do this, here's the way I do it:
 
 1. Push it to **GitHub**.
-2. Do `npm install --save git+https://github.com/MrToph/react-native-android-library-boilerplate.git` in your main project.
+2. Do `npm install --save git+https://github.com/voxvocis/react-native-android-library-boilerplate` in your main project.
 3. Link the library:
     * Add the following to `android/settings.gradle`:
         ```
@@ -49,7 +49,7 @@ There are many ways to do this, here's the way I do it:
         ```java
         package com.motivation;
 
-        import io.cmichel.boilerplate.Package;  // add this for react-native-android-library-boilerplate
+        import com.example.boilerplate.Package;  // add this for react-native-android-library-boilerplate
 
         public class MainApplication extends Application implements ReactApplication {
 
